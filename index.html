@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Symbiosis Episode 1</title>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" style="width: 1154px; height: 648px; background: #231F20"></canvas>
+    <script src="Build/Episode 1 Build.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/Episode 1 Build.data.br",
+        frameworkUrl: "Build/Episode 1 Build.framework.js.br",
+        codeUrl: "Build/Episode 1 Build.wasm.br",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "Eugenie Dawson",
+        productName: "Symbiosis Episode 1",
+        productVersion: "1.0",
+      });
+    </script>
+  </body>
+</html>
